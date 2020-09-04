@@ -36,5 +36,8 @@ print(Y_test.shape)
 
 model = XGBClassifier()
 model.fit(X_train,Y_train)
+Y_pred = model.predict(X_test)
+print(accuracy_score(Y_test, Y_pred)*100)
+print(confusion_matrix(Y_test,Y_pred))
 
 
