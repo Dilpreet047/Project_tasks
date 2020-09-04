@@ -34,4 +34,7 @@ print(Y_train.shape)
 print(Y_test.shape)
 
 
+model = XGBClassifier()
+model.fit(X_train,Y_train)
+
 
