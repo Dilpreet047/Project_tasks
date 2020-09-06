@@ -8,29 +8,29 @@
     </head>
     <body>
        <form action="{% url 'result' %}">
-        
-        MDVP:Fo(Hz): <input type="float64" required name = "MDVP:Fo(Hz)"> <br> <br>
-        MDVP:Fhi(Hz): <input type="float64" required name = "MDVP:Fhi(Hz)"> <br> <br>
-        MDVP:Flo(Hz): <input type="float64" required name = "MDVP:Flo(Hz)"> <br> <br>
-        MDVP:Jitter(%): <input type="float64" required name = "MDVP:Jitter(%)"> <br> <br>
-        MDVP:Jitter(Abs): <input type="float64" required name = "MDVP:Jitter(Abs)"> <br> <br>
-        MDVP:RAP: <input type="float64" required name = "MDVP:RAP"> <br> <br>
-        MDVP:PPQ: <input type="float64" required name = "MDVP:PPQ"> <br> <br>
-        Jitter:DDP: <input type="float64" required name = "Jitter:DDP"> <br> <br>
-        MDVP:Shimmer: <input type="float64" required name = "MDVP:Shimmer"> <br> <br>
-        MDVP:Shimmer(dB): <input type="float64" required name = "MDVP:Shimmer(dB)"> <br> <br>
-        Shimmer:APQ3: <input type="float64" required name = "Shimmer:APQ3"> <br> <br>
-        Shimmer:APQ5: <input type="float64" required name = "Shimmer:APQ5"> <br> <br>
-        MDVP:APQ: <input type="float64" required name = "MDVP:APQ"> <br> <br>
-        Shimmer:DDA: <input type="float64" required name = "Shimmer:DDA"> <br> <br>
-        NHR: <input type="float64" required name = "NHR"> <br> <br>
-        HNR: <input type="float64" required name = "HNR"> <br> <br>
-        RPDE: <input type="float64" required name = "RPDE"> <br> <br>
-        DFA: <input type="float64" required name = "DFA"> <br> <br>
-        spread1: <input type="float64" required name = "spread1"> <br> <br>
-        spread2: <input type="float64" required name = "spread2"> <br> <br>
-        D2: <input type="float64" required name = "D2"> <br> <br>
-        PPE: <input type="float64" required name = "PPE"> <br> <br>
+        {% csrf_token %}
+        MDVP:Fo(Hz): <input type="number" step = "any" required name = "MDVP:Fo(Hz)"> <br> <br>
+        MDVP:Fhi(Hz): <input type="number" step = "any" required name = "MDVP:Fhi(Hz)"> <br> <br>
+        MDVP:Flo(Hz): <input type="number" step = "any" required name = "MDVP:Flo(Hz)"> <br> <br>
+        MDVP:Jitter(%): <input type="number" step = "any" required name = "MDVP:Jitter(%)"> <br> <br>
+        MDVP:Jitter(Abs): <input type="number" step = "any" required name = "MDVP:Jitter(Abs)"> <br> <br>
+        MDVP:RAP: <input type="number" step = "any" required name = "MDVP:RAP"> <br> <br>
+        MDVP:PPQ: <input type="number" step = "any" required name = "MDVP:PPQ"> <br> <br>
+        Jitter:DDP: <input type="number" step = "any" required name = "Jitter:DDP"> <br> <br>
+        MDVP:Shimmer: <input type="number" step = "any" required name = "MDVP:Shimmer"> <br> <br>
+        MDVP:Shimmer(dB): <input type="number" step = "any" required name = "MDVP:Shimmer(dB)"> <br> <br>
+        Shimmer:APQ3: <input type="number" step = "any" required name = "Shimmer:APQ3"> <br> <br>
+        Shimmer:APQ5: <input type="number" step = "any" required name = "Shimmer:APQ5"> <br> <br>
+        MDVP:APQ: <input type="number" step = "any" required name = "MDVP:APQ"> <br> <br>
+        Shimmer:DDA: <input type="number" step = "any" required name = "Shimmer:DDA"> <br> <br>
+        NHR: <input type="number" step = "any" required name = "NHR"> <br> <br>
+        HNR: <input type="number" step = "any" required name = "HNR"> <br> <br>
+        RPDE: <input type="number" step = "any" required name = "RPDE"> <br> <br>
+        DFA: <input type="number" step = "any" required name = "DFA"> <br> <br>
+        spread1: <input type="number" step = "any" required name = "spread1"> <br> <br>
+        spread2: <input type="number" step = "any" required name = "spread2"> <br> <br>
+        D2: <input type="number" step = "any"required name = "D2"> <br> <br>
+        PPE: <input type="number" step = "any" required name = "PPE"> <br> <br>
 
         <input type="submit" name="" value="submit">
 
