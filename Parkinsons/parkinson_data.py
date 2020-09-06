@@ -3,6 +3,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
+import joblib
 
 
 df = pd.read_csv('parkinsons.data')
@@ -40,4 +41,5 @@ Y_pred = model.predict(X_test)
 print(accuracy_score(Y_test, Y_pred)*100)
 print(confusion_matrix(Y_test,Y_pred))
 
-
+filename = 'model.sav'
+joblib.dump(model, filename)
