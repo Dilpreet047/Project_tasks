@@ -46,7 +46,7 @@ def function2(request):
     x=dict(zip(l2,l1))
     print(x)
     y = pd.DataFrame(x)
-    y = y.astype(float)
+    y = y.astype('float')
     print(y)
     model = joblib.load('model.sav')
     status = model.predict(y)
