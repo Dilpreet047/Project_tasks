@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>
-
+            
         </title>
     </head>
     <body>
+        <h1 style="text-align:center"><strong>Parkinson Disease Predictor</strong></h1>
+        <h3>Please enter the required fields:</h3>
        <form action="{% url 'result' %}">
         {% csrf_token %}
         MDVP:Fo(Hz): <input type="number" step = "any" required name = "MDVP:Fo(Hz)"> <br> <br>

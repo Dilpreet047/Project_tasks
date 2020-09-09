@@ -27,7 +27,7 @@ X = X.rename(columns=name)
 print(X.shape)
 print(Y.shape)
 
-X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, random_state = 7)
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.20, random_state = 7)
 
 print(X_train.shape)
 print(X_test.shape)
@@ -35,7 +35,7 @@ print(Y_train.shape)
 print(Y_test.shape)
 
 
-model = XGBClassifier()
+model = XGBClassifier(n_estimators=300, learning_rate=0.1)
 model.fit(X_train,Y_train)
 Y_pred = model.predict(X_test)
 print(accuracy_score(Y_test, Y_pred)*100)
